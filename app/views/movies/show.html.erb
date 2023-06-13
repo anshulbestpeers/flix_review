@@ -4,4 +4,8 @@
 <p><%= @movie.description %></p>
 <p><%= @movie.release_date %></p>
 
-<%= link_to 'Edit', edit_movie_path%>
+<%= link_to 'Edit', edit_movie_path %>
+<%= link_to 'Destroy', movie_path(@movie),data: {
+  turbo_method: :delete,
+  turbo_confirm: 'Are You Sure?' 
+  } %>
