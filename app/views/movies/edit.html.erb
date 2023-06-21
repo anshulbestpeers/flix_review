@@ -22,7 +22,12 @@
     <div class="field">
     <%= form.label :category_id %>
     <%= form.collection_select :category_id, Category.all, :id, :name %>
-  </div><br>
+    </div><br>
+
+    <div>
+    <%= form.label :main_image%>
+    <%= form.file_field :main_image %>
+    <div><br
 
     <div>
     <%= form.submit %>
